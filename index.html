@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Какой стиль татуировки тебе подходит?</title>
+</head>
+<body>
+    <div class="container">
+        <div id="start-screen">
+            <h1>Какой стиль татуировки тебе подходит?</h1>
+            <p class="subtitle">Пройди тест из 10 вопросов и узнай, какой стиль татуировки идеально отражает твою личность!</p>
+            <button id="start-btn">Начать тест</button>
+        </div>
+
+        <div id="test-screen" class="hidden">
+            <div class="progress">
+                <div>Вопрос <span id="current-question">1</span> из 10</div>
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progress-fill"></div>
+                </div>
+            </div>
+            
+            <div id="question-container">
+                <!-- Вопросы будут добавляться динамически -->
+            </div>
+            
+            <div class="navigation">
+                <button id="prev-btn" disabled>← Назад</button>
+                <button id="next-btn">Далее →</button>
+                <button id="submit-btn" class="hidden">Узнать результат</button>
+            </div>
+        </div>
+
+        <div id="results-screen" class="hidden">
+            <div class="results">
+                <h2>Твой идеальный стиль татуировки!</h2>
+                <div id="result-content">
+                    <!-- Результат будет добавляться динамически -->
+                </div>
+                <button id="restart-btn">Пройти тест снова</button>
+            </div>
+        </div>
+    </div>
+    <div id="background-slideshow" class="background-slideshow hidden">
+        <div class="background-images" id="background-images"></div>
+    </div>
+
+    <script src="source.js"></script>
+</body>
+</html>
